@@ -1,0 +1,48 @@
+{
+  "name": "fjc-civil-trial-36m",
+  "description": "Will a newly filed federal civil case reach trial within 36 months?",
+  "target": "trial_within_36m",
+  "positive_label": 1,
+  "id_columns": [
+    "CASE_ID"
+  ],
+  "columns": [
+    "CASE_ID",
+    "FILEDATE",
+    "NOS",
+    "JURIS",
+    "DISTRICT",
+    "CIRCUIT",
+    "JURY",
+    "DEMANDED",
+    "FILEDATE_YEAR_MONTH",
+    "RESIDENC",
+    "ARBIT",
+    "trial_within_36m"
+  ],
+  "rows": {
+    "train": 600136,
+    "eval": 124885,
+    "holdout": 113510
+  },
+  "positive_rate": {
+    "train": 0.00904128397563219,
+    "eval": 0.005028626336229331,
+    "holdout": 0.0047749096995859395
+  },
+  "split": {
+    "eval": {
+      "end": "2018-10-01T00:00:00.000",
+      "start": "2017-10-01T00:00:00.000"
+    },
+    "holdout": {
+      "end": "2022-10-01T00:00:00.000",
+      "start": "2021-10-01T00:00:00.000"
+    },
+    "train": {
+      "end": "2014-10-01T00:00:00.000",
+      "start": "2010-10-01T00:00:00.000"
+    }
+  },
+  "split_description": "Fixed chronological cohorts by FILEDATE with a 36-month label-maturity embargo: train 2010-10-01 to 2014-09-30 (FY2011-FY2014); eval 2017-10-01 to 2018-09-30 (FY2018); holdout 2021-10-01 to 2022-09-30 (FY2022). Train outcomes mature by 2017-09-30, eval by 2021-09-30, and holdout by 2025-09-30; unused gap years are discarded. No random shuffling."
+}

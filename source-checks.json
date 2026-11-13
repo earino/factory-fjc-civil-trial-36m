@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "check": "selected_archive_member",
+      "observed": "cv88on.txt",
+      "expected": "one cv88on text member",
+      "passed": true
+    },
+    {
+      "check": "header_detection",
+      "observed": "header",
+      "expected": "detect a header row or assign codebook names to a headerless tab-delimited file",
+      "passed": true
+    },
+    {
+      "check": "malformed_rows_policy",
+      "observed": "malformed rows skipped by the delimited parser",
+      "expected": "drop malformed rows",
+      "passed": true
+    },
+    {
+      "check": "source_rows",
+      "observed": "10960173",
+      "expected": "positive row count",
+      "passed": true
+    },
+    {
+      "check": "origin_rows",
+      "observed": "{'origin_equal_1': 7944047, 'origin_counts': {'1': 7944047, '2': 1286241, '4': 381212, '5': 205657, '3': 35292, '6': 369271, '7': 1917, '8': 30167, '9': 4464, '10': 1159, '-8': 550, '11': 639, '12': 213, '13': 699344}}",
+      "expected": "at least one ORIGIN equal to 1 row",
+      "passed": true
+    },
+    {
+      "check": "valid_filedate_rows",
+      "observed": "7944047",
+      "expected": "at least one valid FILEDATE among ORIGIN equal to 1 rows",
+      "passed": true
+    },
+    {
+      "check": "missing_key_counts",
+      "observed": "{'FILEDATE': 0, 'NOS': 0, 'JURIS': 0, 'DOCKET': 0}",
+      "expected": "missing key rows recorded and excluded from the population",
+      "passed": true
+    },
+    {
+      "check": "excluded_nos_counts",
+      "observed": "{'460-465': 143991, '510-560': 1931165, '861-865': 560187}",
+      "expected": "excluded NOS ranges recorded; their presence elsewhere in the source does not abort the build",
+      "passed": true
+    },
+    {
+      "check": "district_code_parse",
+      "observed": "{'missing_district_rows_among_origin_one': 0, 'unparsed_district_rows_among_origin_one': 0, 'distinct_district_codes': 94, 'letter_suffixed_codes': ['3A', '3C', '3E', '3G', '3J', '3L', '3N'], 'letter_suffixed_rows': 867048, 'hyphen_suffixed_codes': ['7-'], 'hyphen_suffixed_rows': 15362, 'raw_district_rows_with_hyphen': 15362, 'preserved_hyphen_rows': 15362}",
+      "expected": "every ORIGIN equal to 1 row carries the codebook district code; the seven letter-suffixed districts such as 3A, 3C and 3N stay text instead of becoming missing numbers; and the Alaska code 7- is preserved rather than truncated to 7",
+      "passed": true
+    },
+    {
+      "check": "dedup_key_duplicates",
+      "observed": "{'cohort_rows_before_dedup': 856846, 'duplicate_key_rows': 18315, 'rows_after_dedup': 838531}",
+      "expected": "duplicate docket keys are removed under the documented maximum-TAPEYEAR rule, and the district is part of the key as its text code so distinct letter-coded and hyphen-coded districts cannot merge",
+      "passed": true
+    },
+    {
+      "check": "feature_coverage",
+      "observed": "{'NOS': 838531, 'JURIS': 838531, 'DISTRICT': 838531, 'CIRCUIT': 838531, 'JURY': 838531, 'DEMANDED': 838531, 'FILEDATE_YEAR_MONTH': 838531, 'RESIDENC': 263131, 'ARBIT': 35586}",
+      "expected": "each declared feature has at least one nonmissing value",
+      "passed": true
+    },
+    {
+      "check": "target_positive_rows",
+      "observed": "6596",
+      "expected": "at least one positive trial outcome",
+      "passed": true
+    },
+    {
+      "check": "positive_events_by_split",
+      "observed": "{'train': 5426, 'eval': 628, 'holdout': 542}",
+      "expected": "each fixed split has at least one positive event",
+      "passed": true
+    },
+    {
+      "check": "split_windows",
+      "observed": "{'train': {'min': '2010-10-01', 'max': '2014-09-30'}, 'eval': {'min': '2017-10-01', 'max': '2018-09-30'}, 'holdout': {'min': '2021-10-01', 'max': '2022-09-30'}}",
+      "expected": "{'train': {'start': '2010-10-01', 'end_exclusive': '2014-10-01'}, 'eval': {'start': '2017-10-01', 'end_exclusive': '2018-10-01'}, 'holdout': {'start': '2021-10-01', 'end_exclusive': '2022-10-01'}}",
+      "passed": true
+    },
+    {
+      "check": "duplicate_case_ids",
+      "observed": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "check": "split_row_counts",
+      "observed": "{'train': 600136, 'eval': 124885, 'holdout': 113510}",
+      "expected": "nonempty train, eval and holdout frames",
+      "passed": true
+    },
+    {
+      "check": "identical_columns",
+      "observed": "{'train': ['CASE_ID', 'FILEDATE', 'NOS', 'JURIS', 'DISTRICT', 'CIRCUIT', 'JURY', 'DEMANDED', 'FILEDATE_YEAR_MONTH', 'RESIDENC', 'ARBIT', 'trial_within_36m'], 'eval': ['CASE_ID', 'FILEDATE', 'NOS', 'JURIS', 'DISTRICT', 'CIRCUIT', 'JURY', 'DEMANDED', 'FILEDATE_YEAR_MONTH', 'RESIDENC', 'ARBIT', 'trial_within_36m'], 'holdout': ['CASE_ID', 'FILEDATE', 'NOS', 'JURIS', 'DISTRICT', 'CIRCUIT', 'JURY', 'DEMANDED', 'FILEDATE_YEAR_MONTH', 'RESIDENC', 'ARBIT', 'trial_within_36m']}",
+      "expected": "['CASE_ID', 'FILEDATE', 'NOS', 'JURIS', 'DISTRICT', 'CIRCUIT', 'JURY', 'DEMANDED', 'FILEDATE_YEAR_MONTH', 'RESIDENC', 'ARBIT', 'trial_within_36m']",
+      "passed": true
+    },
+    {
+      "check": "target_values",
+      "observed": "[0, 1]",
+      "expected": "[0, 1]",
+      "passed": true
+    },
+    {
+      "check": "demanded_units",
+      "observed": "{'nonmissing': 838531, 'min': 0.0, 'max': 9999.0, 'top_code_9999_count': 18500}",
+      "expected": "nonnegative thousands of dollars, top-coded at 9999",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "trial_horizon_days",
+      "observed": "1096",
+      "expected": "no more than 1097 days, the 36-month horizon",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "label_rule",
+      "observed": "{'positives': 6596, 'rule_matches': 6596}",
+      "expected": "all positives are PROCPROG 6 through 9 with TERMDATE on or before FILEDATE plus 36 months",
+      "passed": true
+    }
+  ]
+}

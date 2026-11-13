@@ -1,0 +1,157 @@
+{
+  "construction": {
+    "access_recipe": "Download https://www.fjc.gov/sites/default/files/idb/textfiles/cv88on.zip, unzip cv88on.txt, and read it with a tab-delimited parser over fixed 150,000-row chunks. Verify whether the first row is a header and assign the codebook names positionally if it is absent. Parse MM/DD/YYYY dates with invalid values coerced to missing and the 01/01/1900 sentinel mapped to missing. Read DISTRICT as text and keep the codebook codes, including the letter-suffixed 3A, 3C, 3E, 3G, 3J, 3L, 3N and Alaska's hyphen code 7-, rather than converting the column to a number or stripping the hyphen, because numeric coercion or hyphen stripping turns those courts into missing or wrong codes and collides distinct dockets in the deduplication key. Filter ORIGIN equal to 1, exclude NOS 460-465, 510-560 and 861-865, deduplicate on (CIRCUIT, DISTRICT, OFFICE, DOCKET) keeping the record with the maximum TAPEYEAR, derive the target from PROCPROG 6 through 9 with TERMDATE no later than FILEDATE plus 36 months, then drop PLT, DEF, PROCPROG, DISP, TERMDATE, JUDGMENT, NOJ, AMTREC, TRCLACT and the other post-outcome fields.",
+    "expected_size": "Observed file manifest for the 2026-08-26 extract: 329,665,474 bytes compressed, 2,009,227,701 bytes uncompressed, 10,960,173 rows and 46 columns; the filtered first release is estimated at roughly 1.3-1.6M cases.",
+    "format": "ZIP containing one tab-delimited text file (cv88on.txt) with 46 documented columns; verify whether the first row is a header and assign codebook names if absent.",
+    "source_examples": "PROCPROG 7 = during jury trial; DISP 9 = court trial; NOS 440 = Other Civil Rights; JURIS 4 = diversity of citizenship; JURY P = plaintiff demands jury; DEMANDED 9999 = top-coded demand over $10,000 thousand."
+  },
+  "dataset_id": "fjc-civil-trial-36m",
+  "evidence": [
+    {
+      "claim": "FJC provides public access to the IDB, a unified longitudinal database of federal court case records.",
+      "quote": "provides through this site public access to its Integrated Data Base (IDB)",
+      "url": "https://www.fjc.gov/research/idb"
+    },
+    {
+      "claim": "The civil cumulative file is a single directly downloadable ZIP covering terminated and pending civil cases through June 30, 2026.",
+      "quote": "Cases terminated in SY 1988 through June 30, 2026 and cases pending as of June 30, 2026",
+      "url": "https://www.fjc.gov/research/idb/civil-cases-filed-terminated-and-pending-sy-1988-present"
+    },
+    {
+      "claim": "PROCPROG codes 6-9 identify dispositions during or after a court or jury trial.",
+      "quote": "6    -during court trial\n7    -during jury trial\n8    -after court trial\n9    -after jury trial",
+      "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf"
+    },
+    {
+      "claim": "DISPOSITION codes 7-9 separately identify jury verdict, directed verdict, and court trial.",
+      "quote": "7 \u2013 jury verdict\n8 \u2013 directed verdict\n9 -court trial",
+      "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf"
+    },
+    {
+      "claim": "JURY is a categorical filing field indicating which party demanded a jury.",
+      "quote": "P \u2013 Plaintiff demands jury",
+      "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf"
+    },
+    {
+      "claim": "DEMANDED records the plaintiff's monetary demand in thousands of dollars.",
+      "quote": "The monetary amount sought by plaintiff (in thousands).",
+      "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf"
+    },
+    {
+      "claim": "FJC states that its publications are not copyrighted unless otherwise noted.",
+      "quote": "Unless otherwise noted, FJC publications are not copyrighted.",
+      "url": "https://www.fjc.gov/publications/publications"
+    },
+    {
+      "claim": "U.S. statutory copyright protection does not extend to works of the U.S. Government.",
+      "quote": "Copyright protection under this title is not available for any work of the United States Government",
+      "url": "https://www.law.cornell.edu/uscode/text/17/105"
+    },
+    {
+      "claim": "The IDB is a current-vintage snapshot whose case records can be overwritten across quarterly updates.",
+      "quote": "case information is potentially overwritten with each update if the record has been altered by the court",
+      "url": "https://www.fjc.gov/sites/default/files/IDB-Research-Guide.pdf"
+    },
+    {
+      "claim": "The IDB is built from case data routinely reported by the courts to the Administrative Office of the U.S. Courts.",
+      "quote": "The FJC receives quarterly updates of the case-related data that are routinely reported by the courts to the AOUSC",
+      "url": "https://www.fjc.gov/sites/default/files/IDB-Research-Guide.pdf"
+    }
+  ],
+  "limitations": [
+    "Current-vintage retrospective: the IDB is a 2026 snapshot and records may be overwritten within the reporting year, so filing-time fields such as JURY may reflect later corrections; this does not prove historical operational availability.",
+    "Trial is rare (roughly 0.6-1% of civil filings), so the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+    "PROCPROG is missing for some terminated records; missing is treated as no trial, which may undercount trials.",
+    "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE, so a trial that began just before 36 months but terminated after is coded 0.",
+    "The IDB redacts judge identifiers, so judge-level effects cannot be modeled and district codes are the finest court control.",
+    "The source contains first-listed party names (PLT, DEF); the release must drop them and must not republish names even though the underlying file is public.",
+    "ORIGIN=1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+    "JURY coverage is incomplete; many records have missing jury-demand values, which should be retained as an explicit missing category.",
+    "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law, and any CC0 applied to our derived release covers only our contribution.",
+    "No publisher-suggested citation was found; the recommended credit is 'Federal Judicial Center, Integrated Database (IDB)' and no upstream attribution is legally required."
+  ],
+  "reason": "The FJC Integrated Database civil cumulative file is a single directly downloadable, tab-delimited federal dataset with a documented 46-column codebook, case-level filing attributes, and a precise termination-time trial outcome; filtering to original filings and a 36-month horizon yields thousands of trial events for fixed chronological train/eval/holdout cohorts without accounts, joins, or panel leakage.",
+  "source": {
+    "attribution": "Federal Judicial Center, Integrated Database (IDB)",
+    "citation": "",
+    "documentation_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+    "license": "U.S. Public Domain (17 U.S.C. \u00a7 105); FJC states publications are not copyrighted unless otherwise noted",
+    "publisher": "Federal Judicial Center (FJC), U.S. federal judiciary",
+    "redistribution": true,
+    "terms_excerpt": "Copyright protection under this title is not available for any work of the United States Government",
+    "terms_url": "https://www.law.cornell.edu/uscode/text/17/105",
+    "urls": [
+      "https://www.fjc.gov/sites/default/files/idb/textfiles/cv88on.zip",
+      "https://www.fjc.gov/research/idb/civil-cases-filed-terminated-and-pending-sy-1988-present"
+    ]
+  },
+  "task": {
+    "decision_user": "A litigation analyst or court operations planner screening a newly docketed civil case for trial exposure at filing.",
+    "features": [
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Three-digit nature-of-suit code for the action filed.",
+        "name": "NOS"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Basis for federal jurisdiction: U.S. plaintiff, U.S. defendant, federal question, diversity, or local question.",
+        "name": "JURIS"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet and shipped as the codebook text district code, including the letter-suffixed districts 3A, 3C, 3E, 3G, 3J, 3L, 3N, and Alaska's hyphen code 7-, retained as text; the current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "District court in which the case was filed, as the codebook district code (for example 3A for Florida Middle, 3N for a letter-suffixed district, and 7- for Alaska), retained as text rather than coerced to a number.",
+        "name": "DISTRICT"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Circuit in which the case was filed.",
+        "name": "CIRCUIT"
+      },
+      {
+        "availability": "Recorded on the civil cover sheet at filing; the IDB snapshot may reflect later corrections and missing values are retained as an explicit category.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Party or parties demanding a jury trial: B, D, P, N, or missing.",
+        "name": "JURY"
+      },
+      {
+        "availability": "Recorded at filing; missing and top-coded values are retained as explicit categories.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Monetary amount demanded by the plaintiff, in thousands of dollars, top-coded at 9999.",
+        "name": "DEMANDED"
+      },
+      {
+        "availability": "Calendar month of filing derived from FILEDATE.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Calendar year and month of filing, derived from FILEDATE.",
+        "name": "FILEDATE_YEAR_MONTH"
+      },
+      {
+        "availability": "Available at filing only in diversity cases; missing otherwise, from the current IDB snapshot.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Two-digit diversity-residence code for plaintiff and defendant.",
+        "name": "RESIDENC"
+      },
+      {
+        "availability": "Recorded at filing for participating courts; missing retained as an explicit category in the current IDB snapshot.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Arbitration-program participation at filing: M, V, E, Y, or missing.",
+        "name": "ARBIT"
+      }
+    ],
+    "outcome_horizon": "36 months after filing.",
+    "population": "Original civil proceedings (ORIGIN equal to 1) filed in U.S. district courts, one record per (CIRCUIT, DISTRICT, OFFICE, DOCKET) key, with FILEDATE in the fixed cohort windows; exclude NOS 460-465, 510-560, 861-865 and records with missing or invalid FILEDATE, NOS, JURIS, or DISTRICT. DISTRICT is retained as the codebook text code, including the letter-suffixed and hyphen-coded courts.",
+    "prediction_time": "At case filing (the filing date, which is also the carried time column), using only civil cover-sheet and case-opening fields; no docket events after filing.",
+    "question": "Will a newly filed federal civil case reach trial within 36 months?",
+    "simple_references": "Majority-class (no trial) rate; filing-year base rate; NOS x JURY cell base rate; district base rate. No persistence baseline because each case is a new entity rather than a repeated panel unit.",
+    "split_policy": "Fixed chronological cohorts by FILEDATE with a 36-month label-maturity embargo: train 2010-10-01 to 2014-09-30 (FY2011-FY2014); eval 2017-10-01 to 2018-09-30 (FY2018); holdout 2021-10-01 to 2022-09-30 (FY2022). Train outcomes mature by 2017-09-30, eval by 2021-09-30, and holdout by 2025-09-30; unused gap years are discarded. No random shuffling.",
+    "target": "1 if PROCPROG is 6, 7, 8, or 9 (case disposed during or after a court or jury trial) and TERMDATE is no later than FILEDATE plus 36 months; 0 otherwise, including cases still pending at 36 months.",
+    "usefulness": "Trial is a rare, costly event not known at filing; the label is observed only at termination. A model over static cover-sheet fields gives litigants and court managers a filing-time trial-exposure score, and it cannot be obtained by copying a field because PROCPROG, DISP, TERMDATE, and judgment fields are excluded."
+  },
+  "title": "Will a newly filed federal civil case reach trial within 36 months? Forward trial prediction from FJC Integrated Database filing records",
+  "verdict": "ready"
+}

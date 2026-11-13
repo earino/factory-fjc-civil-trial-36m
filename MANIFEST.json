@@ -1,0 +1,375 @@
+{
+  "schema": "factory-1",
+  "dataset": "fjc-civil-trial-36m",
+  "version": "v-86c6129e8102da78",
+  "artifact_version": "12c60dcef222d140c644711233662e099b37df1325fe5ad1c96ff2d94d0aeff5",
+  "assets": {
+    "LICENSE-EVIDENCE.json": {
+      "sha256": "bba556bc28f986bcb50e270bb2756ce91a3e8fff729c68cd3684789bea649c24",
+      "bytes": 674,
+      "asset_name": "LICENSE-EVIDENCE.json"
+    },
+    "LICENSE.md": {
+      "sha256": "dc6b8caf1050ec332791f44822d73d1d5da593de52c4a84fd004cc9a38c52f57",
+      "bytes": 891,
+      "asset_name": "LICENSE.md"
+    },
+    "README.md": {
+      "sha256": "f94034e769e4531f680654374e8a23b88db6056ee819ca4ee731ff300ff96a36",
+      "bytes": 5765,
+      "asset_name": "README.md"
+    },
+    "SOURCES.json": {
+      "sha256": "89fa39433dd67697c690308c582c51f69dfb71676e8ef9b45e22cc6f580ed4a5",
+      "bytes": 895,
+      "asset_name": "SOURCES.json"
+    },
+    "evaluation.json": {
+      "sha256": "6209872f6a8e9d12b2d8cab7b9974456de44ec573c228f774d9e330cf1c8969e",
+      "bytes": 1868,
+      "asset_name": "evaluation.json"
+    },
+    "extract/meta.json": {
+      "sha256": "f24d319a7973276ee6b51e7888dce8c8149a4f356c1f78306d58a2ad4fb1d50c",
+      "bytes": 1341,
+      "asset_name": "extract__meta.json"
+    },
+    "extract/private/holdout.csv": {
+      "sha256": "7349959ed317c25415752f29c4e49f21d5958a0aec51e7fd1df29c9546610b0c",
+      "bytes": 7705495,
+      "asset_name": "extract__private__holdout.csv"
+    },
+    "extract/public/eval.csv": {
+      "sha256": "7e93a35fd82fac66446d41205e2aae712c49a1191a6c047bf365ee26908bc48a",
+      "bytes": 8514306,
+      "asset_name": "extract__public__eval.csv"
+    },
+    "extract/public/train.csv": {
+      "sha256": "d550e6b6a15040748d7990e85aa55dba87cc420ce588aac9a0675074e4f070d8",
+      "bytes": 40392330,
+      "asset_name": "extract__public__train.csv"
+    },
+    "extract/quality.json": {
+      "sha256": "971e15fb71a8e7df5d625b3c5af3e69c50bf6582f1fc83ce0d46b498235880b3",
+      "bytes": 15334,
+      "asset_name": "extract__quality.json"
+    },
+    "get_dataset.py": {
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48",
+      "bytes": 3680,
+      "asset_name": "get_dataset.py"
+    },
+    "qualification.json": {
+      "sha256": "c4669381f9c51aec309ada018978ea6c29a95cc97ed2616d7d610ceac12c807d",
+      "bytes": 16595,
+      "asset_name": "qualification.json"
+    },
+    "reproduction/LICENSE-CC0-1.0.txt": {
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "asset_name": "reproduction__LICENSE-CC0-1.0.txt"
+    },
+    "reproduction/LICENSE-MIT.txt": {
+      "sha256": "56b932ff064e5da113ae10175c8546325f64f26e1ece71683ffcbf8b2304fe1c",
+      "bytes": 1124,
+      "asset_name": "reproduction__LICENSE-MIT.txt"
+    },
+    "reproduction/artifact_scrub.py": {
+      "sha256": "8c663253e691a7b8751f9c853b40a3752a833360caafb1ea8e8f534e64af4b68",
+      "bytes": 11369,
+      "asset_name": "reproduction__artifact_scrub.py"
+    },
+    "reproduction/build.py": {
+      "sha256": "9c89ffff8c8f93c070ab7e5a5092cf142ca13bbe3a25199285854696006fa8e2",
+      "bytes": 28630,
+      "asset_name": "reproduction__build.py"
+    },
+    "reproduction/construction.json": {
+      "sha256": "0d318f12676830306f5ffb8533376e0f87ca305b1bb53a32a8cb30fed9515924",
+      "bytes": 17514,
+      "asset_name": "reproduction__construction.json"
+    },
+    "reproduction/dataset_package.py": {
+      "sha256": "c2364defe58dcc99322be59a1bb04894ce00e823ce37afeb37bc31012f744327",
+      "bytes": 7927,
+      "asset_name": "reproduction__dataset_package.py"
+    },
+    "reproduction/dataset_run.py": {
+      "sha256": "8085fae14d6e93b852e692e18c1ef72113a3601f48f78901b6d1ae6db278de57",
+      "bytes": 12381,
+      "asset_name": "reproduction__dataset_run.py"
+    },
+    "reproduction/get_dataset.py": {
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48",
+      "bytes": 3680,
+      "asset_name": "reproduction__get_dataset.py"
+    },
+    "reproduction/leakage_battery.py": {
+      "sha256": "adbf7ee0aca0012b78cc1f1e4aeb968a23717cae30f66a02e080215e75f830e3",
+      "bytes": 17379,
+      "asset_name": "reproduction__leakage_battery.py"
+    },
+    "reproduction/provenance.json": {
+      "sha256": "c4b7e3bae1aa9b5152d0080fd6ef89ce05da483deaa897e8ffa979063150217c",
+      "bytes": 573,
+      "asset_name": "reproduction__provenance.json"
+    },
+    "reproduction/qualify_dataset.py": {
+      "sha256": "bff6d43d0904182e2612c32bab702e41addbf389904a236c209e78be39e37a6b",
+      "bytes": 66067,
+      "asset_name": "reproduction__qualify_dataset.py"
+    },
+    "reproduction/recovery_recipes.py": {
+      "sha256": "f64c542fcda232169c95ace17421b45275194b934938c0ea4c9b68e6f844ad0e",
+      "bytes": 17609,
+      "asset_name": "reproduction__recovery_recipes.py"
+    },
+    "reproduction/requirements.txt": {
+      "sha256": "5c72f3268174d20364624f76680e189c408a05dba2e7b8cfe12d077b3865e7f0",
+      "bytes": 160,
+      "asset_name": "reproduction__requirements.txt"
+    },
+    "reproduction/source.json": {
+      "sha256": "7a9a46bbe9649561199fe3403a9dbe2b0f1440cb099fbbc09b8d7a0eac2af866",
+      "bytes": 14099,
+      "asset_name": "reproduction__source.json"
+    },
+    "reproduction/source_io.py": {
+      "sha256": "0c60eed4968cd342148efbaac7e4fa98f00708d8e6c14c0929928687b9af1ea3",
+      "bytes": 5607,
+      "asset_name": "reproduction__source_io.py"
+    },
+    "reproduction/train.py": {
+      "sha256": "a3c6bcf13735bc85c52129ded68f839090dffdc266ebc3810dc61b2e6ea5e7e8",
+      "bytes": 2500,
+      "asset_name": "reproduction__train.py"
+    },
+    "reproduction/validate.py": {
+      "sha256": "b597e7f84fed614e64b4a86fbecbd6ec0145916a24d0d221a796586976418e7b",
+      "bytes": 1277,
+      "asset_name": "reproduction__validate.py"
+    },
+    "reproduction/validate.sh": {
+      "sha256": "3f06ca48f11c2e05d331b4d8394284925de660c1d4b086d2f8243959e83b7e6d",
+      "bytes": 482,
+      "asset_name": "reproduction__validate.sh"
+    },
+    "source-checks.json": {
+      "sha256": "8ad83e7f5fad35c300238f8c26e3fab029f1f2fb53cf65c61e3aa8a6f5f1f378",
+      "bytes": 5865,
+      "asset_name": "source-checks.json"
+    },
+    "source-snapshot.tar.gz": {
+      "sha256": "7502a6f6786bb5cdac458fc4bcbd37a6cfb07f54257db9781c78e8878028a1ee",
+      "bytes": 329910700,
+      "asset_name": "source-snapshot.tar.gz"
+    },
+    "verify_dataset.py": {
+      "sha256": "f4a4bb7f565cdbd075c520621f881876b491eaed91a5e6e70afb31e4753f9834",
+      "bytes": 1276,
+      "asset_name": "verify_dataset.py"
+    }
+  },
+  "source": {
+    "attribution": "Federal Judicial Center, Integrated Database (IDB)",
+    "citation": "",
+    "documentation_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+    "license": "U.S. Public Domain (17 U.S.C. \u00a7 105); FJC states publications are not copyrighted unless otherwise noted",
+    "publisher": "Federal Judicial Center (FJC), U.S. federal judiciary",
+    "redistribution": true,
+    "terms_excerpt": "Copyright protection under this title is not available for any work of the United States Government",
+    "terms_url": "https://www.law.cornell.edu/uscode/text/17/105",
+    "urls": [
+      "https://www.fjc.gov/sites/default/files/idb/textfiles/cv88on.zip",
+      "https://www.fjc.gov/research/idb/civil-cases-filed-terminated-and-pending-sy-1988-present"
+    ]
+  },
+  "task": {
+    "decision_user": "A litigation analyst or court operations planner screening a newly docketed civil case for trial exposure at filing.",
+    "features": [
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Three-digit nature-of-suit code for the action filed.",
+        "name": "NOS"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Basis for federal jurisdiction: U.S. plaintiff, U.S. defendant, federal question, diversity, or local question.",
+        "name": "JURIS"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet and shipped as the codebook text district code, including the letter-suffixed districts 3A, 3C, 3E, 3G, 3J, 3L, 3N, and Alaska's hyphen code 7-, retained as text; the current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "District court in which the case was filed, as the codebook district code (for example 3A for Florida Middle, 3N for a letter-suffixed district, and 7- for Alaska), retained as text rather than coerced to a number.",
+        "name": "DISTRICT"
+      },
+      {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Circuit in which the case was filed.",
+        "name": "CIRCUIT"
+      },
+      {
+        "availability": "Recorded on the civil cover sheet at filing; the IDB snapshot may reflect later corrections and missing values are retained as an explicit category.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Party or parties demanding a jury trial: B, D, P, N, or missing.",
+        "name": "JURY"
+      },
+      {
+        "availability": "Recorded at filing; missing and top-coded values are retained as explicit categories.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Monetary amount demanded by the plaintiff, in thousands of dollars, top-coded at 9999.",
+        "name": "DEMANDED"
+      },
+      {
+        "availability": "Calendar month of filing derived from FILEDATE.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Calendar year and month of filing, derived from FILEDATE.",
+        "name": "FILEDATE_YEAR_MONTH"
+      },
+      {
+        "availability": "Available at filing only in diversity cases; missing otherwise, from the current IDB snapshot.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Two-digit diversity-residence code for plaintiff and defendant.",
+        "name": "RESIDENC"
+      },
+      {
+        "availability": "Recorded at filing for participating courts; missing retained as an explicit category in the current IDB snapshot.",
+        "evidence_url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "meaning": "Arbitration-program participation at filing: M, V, E, Y, or missing.",
+        "name": "ARBIT"
+      }
+    ],
+    "outcome_horizon": "36 months after filing.",
+    "population": "Original civil proceedings (ORIGIN equal to 1) filed in U.S. district courts, one record per (CIRCUIT, DISTRICT, OFFICE, DOCKET) key, with FILEDATE in the fixed cohort windows; exclude NOS 460-465, 510-560, 861-865 and records with missing or invalid FILEDATE, NOS, JURIS, or DISTRICT. DISTRICT is retained as the codebook text code, including the letter-suffixed and hyphen-coded courts.",
+    "prediction_time": "At case filing (the filing date, which is also the carried time column), using only civil cover-sheet and case-opening fields; no docket events after filing.",
+    "question": "Will a newly filed federal civil case reach trial within 36 months?",
+    "simple_references": "Majority-class (no trial) rate; filing-year base rate; NOS x JURY cell base rate; district base rate. No persistence baseline because each case is a new entity rather than a repeated panel unit.",
+    "split_policy": "Fixed chronological cohorts by FILEDATE with a 36-month label-maturity embargo: train 2010-10-01 to 2014-09-30 (FY2011-FY2014); eval 2017-10-01 to 2018-09-30 (FY2018); holdout 2021-10-01 to 2022-09-30 (FY2022). Train outcomes mature by 2017-09-30, eval by 2021-09-30, and holdout by 2025-09-30; unused gap years are discarded. No random shuffling.",
+    "target": "1 if PROCPROG is 6, 7, 8, or 9 (case disposed during or after a court or jury trial) and TERMDATE is no later than FILEDATE plus 36 months; 0 otherwise, including cases still pending at 36 months.",
+    "usefulness": "Trial is a rare, costly event not known at filing; the label is observed only at termination. A model over static cover-sheet fields gives litigants and court managers a filing-time trial-exposure score, and it cannot be obtained by copying a field because PROCPROG, DISP, TERMDATE, and judgment fields are excluded."
+  },
+  "rows": {
+    "train": 600136,
+    "eval": 124885,
+    "holdout": 113510
+  },
+  "evaluation_contract": {
+    "access": "isolated_rows",
+    "cross_row_audit": {
+      "auxiliary_files_review": "Only public/train.csv, public/eval.csv, and private/holdout.csv are emitted; no auxiliary label or scaffold files.",
+      "probes": [],
+      "rationale": "Each row is an independent case; no cross-row group rates or persistence features are shipped."
+    },
+    "feature_evidence": {
+      "ARBIT": {
+        "availability": "Recorded at filing for participating courts; missing retained as an explicit category in the current IDB snapshot.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "CASE_ID": {
+        "availability": "Constructed stable case identifier from filing record fields, including the district as its text code with the Alaska hyphen code preserved.",
+        "source": "Derived from CIRCUIT, DISTRICT, OFFICE, DOCKET",
+        "status": "verified"
+      },
+      "CIRCUIT": {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "DEMANDED": {
+        "availability": "Recorded at filing; missing and top-coded values are retained as explicit categories.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "DISTRICT": {
+        "availability": "Recorded at case opening on the civil cover sheet and shipped as the codebook text district code, including the letter-suffixed districts 3A, 3C, 3E, 3G, 3J, 3L, 3N, and Alaska's hyphen code 7-, retained as text; the current IDB snapshot may reflect later corrections.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "FILEDATE": {
+        "availability": "Case filing date recorded at case opening; also the split and event-key time column carried in each split file. Current IDB snapshot may reflect later corrections.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "FILEDATE_YEAR_MONTH": {
+        "availability": "Calendar month of filing derived from FILEDATE.",
+        "source": "Derived from FILEDATE",
+        "status": "verified"
+      },
+      "JURIS": {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "JURY": {
+        "availability": "Recorded on the civil cover sheet at filing; the IDB snapshot may reflect later corrections and missing values are retained as an explicit category.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "NOS": {
+        "availability": "Recorded at case opening on the civil cover sheet; current IDB snapshot may reflect later corrections.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      },
+      "RESIDENC": {
+        "availability": "Available at filing only in diversity cases; missing otherwise, from the current IDB snapshot.",
+        "source": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+        "status": "assumed"
+      }
+    },
+    "limitations": [
+      "Current-vintage retrospective snapshot: the IDB is a 2026 file and records may be overwritten across updates, so this is not proof of historical operational availability.",
+      "Trial is rare, roughly 0.6-1% of civil filings; the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+      "PROCPROG is missing for some terminated records; the frozen task treats missing PROCPROG as no trial, which may undercount trials.",
+      "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE.",
+      "The source contains first-listed party names and judge identifiers; the release drops them and does not republish names.",
+      "ORIGIN equal to 1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+      "JURY coverage is incomplete; missing jury-demand values are retained as an explicit missing category.",
+      "DISTRICT is carried as the codebook text code because seven districts use a letter suffix (3A, 3C, 3E, 3G, 3J, 3L, 3N) and Alaska uses the hyphen code 7-; any numeric coercion or hyphen stripping would merge or mislabel distinct courts. The build preserves the hyphen code and reports raw hyphen rows, but that district check only covers rows inside the fixed filing windows.",
+      "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law.",
+      "No publisher-suggested citation was found; the recommended credit is Federal Judicial Center, Integrated Database (IDB).",
+      "No full-row historical availability ledger is available; feature status is assumed and training label timing is unverified."
+    ],
+    "selection": {
+      "evidence": "All shipped features are civil cover-sheet or case-opening fields; no post-filing docket events are used.",
+      "kind": "prediction_time"
+    },
+    "training_label_timing": "unverified",
+    "use": "retrospective_research",
+    "vintage": {
+      "evidence": "FJC IDB civil cumulative file through June 30, 2026; records may be overwritten across updates.",
+      "kind": "current_snapshot"
+    }
+  },
+  "limitations": [
+    "Current-vintage retrospective: the IDB is a 2026 snapshot and records may be overwritten within the reporting year, so filing-time fields such as JURY may reflect later corrections; this does not prove historical operational availability.",
+    "Trial is rare (roughly 0.6-1% of civil filings), so the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+    "PROCPROG is missing for some terminated records; missing is treated as no trial, which may undercount trials.",
+    "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE, so a trial that began just before 36 months but terminated after is coded 0.",
+    "The IDB redacts judge identifiers, so judge-level effects cannot be modeled and district codes are the finest court control.",
+    "The source contains first-listed party names (PLT, DEF); the release must drop them and must not republish names even though the underlying file is public.",
+    "ORIGIN=1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+    "JURY coverage is incomplete; many records have missing jury-demand values, which should be retained as an explicit missing category.",
+    "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law, and any CC0 applied to our derived release covers only our contribution.",
+    "No publisher-suggested citation was found; the recommended credit is 'Federal Judicial Center, Integrated Database (IDB)' and no upstream attribution is legally required.",
+    "Current-vintage retrospective snapshot: the IDB is a 2026 file and records may be overwritten across updates, so this is not proof of historical operational availability.",
+    "Trial is rare, roughly 0.6-1% of civil filings; the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+    "PROCPROG is missing for some terminated records; the frozen task treats missing PROCPROG as no trial, which may undercount trials.",
+    "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE.",
+    "The source contains first-listed party names and judge identifiers; the release drops them and does not republish names.",
+    "ORIGIN equal to 1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+    "JURY coverage is incomplete; missing jury-demand values are retained as an explicit missing category.",
+    "DISTRICT is carried as the codebook text code because seven districts use a letter suffix (3A, 3C, 3E, 3G, 3J, 3L, 3N) and Alaska uses the hyphen code 7-; any numeric coercion or hyphen stripping would merge or mislabel distinct courts. The build preserves the hyphen code and reports raw hyphen rows, but that district check only covers rows inside the fixed filing windows.",
+    "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law.",
+    "No publisher-suggested citation was found; the recommended credit is Federal Judicial Center, Integrated Database (IDB).",
+    "No full-row historical availability ledger is available; feature status is assumed and training label timing is unverified.",
+    "No uncertainty interval; observed differences do not establish universal headroom"
+  ],
+  "qualification": {
+    "gate_version": "1.6.1",
+    "ok": true
+  }
+}

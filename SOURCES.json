@@ -1,0 +1,23 @@
+{
+  "publisher-terms.snapshot": {
+    "url": "https://www.law.cornell.edu/uscode/text/17/105",
+    "bytes": 68298,
+    "sha256": "e0f425493dd80314c4777e99d29a229f1e72ffedd433891c958dec0500fed6d5",
+    "retrieved_at_unix": 1794535873.6242843,
+    "transport_attempts": 1
+  },
+  "publisher-documentation.snapshot": {
+    "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf",
+    "bytes": 172315,
+    "sha256": "57c1ab722420e3e680fabf02865fca3d49b3939261f380c04ba7873979c81adf",
+    "retrieved_at_unix": 1794535874.0562394,
+    "transport_attempts": 1
+  },
+  "cv88on.zip": {
+    "url": "https://www.fjc.gov/sites/default/files/idb/textfiles/cv88on.zip",
+    "bytes": 329665474,
+    "sha256": "74405231a9a3c246c7090d471a1525924fa5afb513ff22b4dc0f4babbac7223d",
+    "retrieved_at_unix": 1794535879.7381542,
+    "transport_attempts": 1
+  }
+}
