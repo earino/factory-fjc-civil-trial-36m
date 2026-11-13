@@ -15,6 +15,14 @@ configs:
     path: extract/private/holdout.csv
 ---
 
+<!-- dataset-factory:links -->
+**Dataset Factory · v-86c6129e8102da78**
+
+[Dataset website](https://earino.github.io/factory-fjc-civil-trial-36m/versions/v-86c6129e8102da78/) · [GitHub release](https://github.com/earino/factory-fjc-civil-trial-36m/releases/tag/v-86c6129e8102da78) · [Hugging Face](https://huggingface.co/datasets/earino/factory-fjc-civil-trial-36m/tree/v-86c6129e8102da78) · [Catalogue](https://earino.github.io/dataset-factory-site/)
+
+Artifact: 12c60dcef222d140c644711233662e099b37df1325fe5ad1c96ff2d94d0aeff5
+<!-- /dataset-factory:links -->
+
 # Will a newly filed federal civil case reach trial within 36 months? Forward trial prediction from FJC Integrated Database filing records
 
 Will a newly filed federal civil case reach trial within 36 months?

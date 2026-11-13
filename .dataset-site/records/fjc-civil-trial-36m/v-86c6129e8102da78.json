@@ -1,0 +1,319 @@
+{
+  "artifact_version": "12c60dcef222d140c644711233662e099b37df1325fe5ad1c96ff2d94d0aeff5",
+  "assets": {
+    "LICENSE-EVIDENCE.json": {
+      "bytes": 674,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/LICENSE-EVIDENCE.json",
+      "hf_path": "LICENSE-EVIDENCE.json",
+      "sha256": "bba556bc28f986bcb50e270bb2756ce91a3e8fff729c68cd3684789bea649c24"
+    },
+    "LICENSE.md": {
+      "bytes": 891,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/LICENSE.md",
+      "hf_path": "LICENSE.md",
+      "sha256": "dc6b8caf1050ec332791f44822d73d1d5da593de52c4a84fd004cc9a38c52f57"
+    },
+    "README.md": {
+      "bytes": 5765,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/README.md",
+      "hf_path": "README.md",
+      "sha256": "f94034e769e4531f680654374e8a23b88db6056ee819ca4ee731ff300ff96a36"
+    },
+    "SOURCES.json": {
+      "bytes": 895,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/SOURCES.json",
+      "hf_path": "SOURCES.json",
+      "sha256": "89fa39433dd67697c690308c582c51f69dfb71676e8ef9b45e22cc6f580ed4a5"
+    },
+    "evaluation.json": {
+      "bytes": 1868,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/evaluation.json",
+      "hf_path": "evaluation.json",
+      "sha256": "6209872f6a8e9d12b2d8cab7b9974456de44ec573c228f774d9e330cf1c8969e"
+    },
+    "extract__meta.json": {
+      "bytes": 1341,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/extract__meta.json",
+      "hf_path": "extract/meta.json",
+      "sha256": "f24d319a7973276ee6b51e7888dce8c8149a4f356c1f78306d58a2ad4fb1d50c"
+    },
+    "extract__private__holdout.csv": {
+      "bytes": 7705495,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/extract__private__holdout.csv",
+      "hf_path": "extract/private/holdout.csv",
+      "sha256": "7349959ed317c25415752f29c4e49f21d5958a0aec51e7fd1df29c9546610b0c"
+    },
+    "extract__public__eval.csv": {
+      "bytes": 8514306,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/extract__public__eval.csv",
+      "hf_path": "extract/public/eval.csv",
+      "sha256": "7e93a35fd82fac66446d41205e2aae712c49a1191a6c047bf365ee26908bc48a"
+    },
+    "extract__public__train.csv": {
+      "bytes": 40392330,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/extract__public__train.csv",
+      "hf_path": "extract/public/train.csv",
+      "sha256": "d550e6b6a15040748d7990e85aa55dba87cc420ce588aac9a0675074e4f070d8"
+    },
+    "extract__quality.json": {
+      "bytes": 15334,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/extract__quality.json",
+      "hf_path": "extract/quality.json",
+      "sha256": "971e15fb71a8e7df5d625b3c5af3e69c50bf6582f1fc83ce0d46b498235880b3"
+    },
+    "get_dataset.py": {
+      "bytes": 3680,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/get_dataset.py",
+      "hf_path": "get_dataset.py",
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48"
+    },
+    "qualification.json": {
+      "bytes": 16595,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/qualification.json",
+      "hf_path": "qualification.json",
+      "sha256": "c4669381f9c51aec309ada018978ea6c29a95cc97ed2616d7d610ceac12c807d"
+    },
+    "reproduction__LICENSE-CC0-1.0.txt": {
+      "bytes": 7048,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__LICENSE-CC0-1.0.txt",
+      "hf_path": "reproduction/LICENSE-CC0-1.0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "reproduction__LICENSE-MIT.txt": {
+      "bytes": 1124,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__LICENSE-MIT.txt",
+      "hf_path": "reproduction/LICENSE-MIT.txt",
+      "sha256": "56b932ff064e5da113ae10175c8546325f64f26e1ece71683ffcbf8b2304fe1c"
+    },
+    "reproduction__artifact_scrub.py": {
+      "bytes": 11369,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__artifact_scrub.py",
+      "hf_path": "reproduction/artifact_scrub.py",
+      "sha256": "8c663253e691a7b8751f9c853b40a3752a833360caafb1ea8e8f534e64af4b68"
+    },
+    "reproduction__build.py": {
+      "bytes": 28630,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__build.py",
+      "hf_path": "reproduction/build.py",
+      "sha256": "9c89ffff8c8f93c070ab7e5a5092cf142ca13bbe3a25199285854696006fa8e2"
+    },
+    "reproduction__construction.json": {
+      "bytes": 17514,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__construction.json",
+      "hf_path": "reproduction/construction.json",
+      "sha256": "0d318f12676830306f5ffb8533376e0f87ca305b1bb53a32a8cb30fed9515924"
+    },
+    "reproduction__dataset_package.py": {
+      "bytes": 7927,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__dataset_package.py",
+      "hf_path": "reproduction/dataset_package.py",
+      "sha256": "c2364defe58dcc99322be59a1bb04894ce00e823ce37afeb37bc31012f744327"
+    },
+    "reproduction__dataset_run.py": {
+      "bytes": 12381,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__dataset_run.py",
+      "hf_path": "reproduction/dataset_run.py",
+      "sha256": "8085fae14d6e93b852e692e18c1ef72113a3601f48f78901b6d1ae6db278de57"
+    },
+    "reproduction__get_dataset.py": {
+      "bytes": 3680,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__get_dataset.py",
+      "hf_path": "reproduction/get_dataset.py",
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48"
+    },
+    "reproduction__leakage_battery.py": {
+      "bytes": 17379,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__leakage_battery.py",
+      "hf_path": "reproduction/leakage_battery.py",
+      "sha256": "adbf7ee0aca0012b78cc1f1e4aeb968a23717cae30f66a02e080215e75f830e3"
+    },
+    "reproduction__provenance.json": {
+      "bytes": 573,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__provenance.json",
+      "hf_path": "reproduction/provenance.json",
+      "sha256": "c4b7e3bae1aa9b5152d0080fd6ef89ce05da483deaa897e8ffa979063150217c"
+    },
+    "reproduction__qualify_dataset.py": {
+      "bytes": 66067,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__qualify_dataset.py",
+      "hf_path": "reproduction/qualify_dataset.py",
+      "sha256": "bff6d43d0904182e2612c32bab702e41addbf389904a236c209e78be39e37a6b"
+    },
+    "reproduction__recovery_recipes.py": {
+      "bytes": 17609,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__recovery_recipes.py",
+      "hf_path": "reproduction/recovery_recipes.py",
+      "sha256": "f64c542fcda232169c95ace17421b45275194b934938c0ea4c9b68e6f844ad0e"
+    },
+    "reproduction__requirements.txt": {
+      "bytes": 160,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__requirements.txt",
+      "hf_path": "reproduction/requirements.txt",
+      "sha256": "5c72f3268174d20364624f76680e189c408a05dba2e7b8cfe12d077b3865e7f0"
+    },
+    "reproduction__source.json": {
+      "bytes": 14099,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__source.json",
+      "hf_path": "reproduction/source.json",
+      "sha256": "7a9a46bbe9649561199fe3403a9dbe2b0f1440cb099fbbc09b8d7a0eac2af866"
+    },
+    "reproduction__source_io.py": {
+      "bytes": 5607,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__source_io.py",
+      "hf_path": "reproduction/source_io.py",
+      "sha256": "0c60eed4968cd342148efbaac7e4fa98f00708d8e6c14c0929928687b9af1ea3"
+    },
+    "reproduction__train.py": {
+      "bytes": 2500,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__train.py",
+      "hf_path": "reproduction/train.py",
+      "sha256": "a3c6bcf13735bc85c52129ded68f839090dffdc266ebc3810dc61b2e6ea5e7e8"
+    },
+    "reproduction__validate.py": {
+      "bytes": 1277,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__validate.py",
+      "hf_path": "reproduction/validate.py",
+      "sha256": "b597e7f84fed614e64b4a86fbecbd6ec0145916a24d0d221a796586976418e7b"
+    },
+    "reproduction__validate.sh": {
+      "bytes": 482,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/reproduction__validate.sh",
+      "hf_path": "reproduction/validate.sh",
+      "sha256": "3f06ca48f11c2e05d331b4d8394284925de660c1d4b086d2f8243959e83b7e6d"
+    },
+    "source-checks.json": {
+      "bytes": 5865,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/source-checks.json",
+      "hf_path": "source-checks.json",
+      "sha256": "8ad83e7f5fad35c300238f8c26e3fab029f1f2fb53cf65c61e3aa8a6f5f1f378"
+    },
+    "source-snapshot.tar.gz": {
+      "bytes": 329910700,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/source-snapshot.tar.gz",
+      "hf_path": "source-snapshot.tar.gz",
+      "sha256": "7502a6f6786bb5cdac458fc4bcbd37a6cfb07f54257db9781c78e8878028a1ee"
+    },
+    "verify_dataset.py": {
+      "bytes": 1276,
+      "download": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/download/v-86c6129e8102da78/verify_dataset.py",
+      "hf_path": "verify_dataset.py",
+      "sha256": "f4a4bb7f565cdbd075c520621f881876b491eaed91a5e6e70afb31e4753f9834"
+    }
+  },
+  "baseline": {
+    "metrics": {
+      "Validation calendar_identity auc": 0.49254135370450874,
+      "Validation calendar_identity brier": 0.005020267645680341,
+      "Validation full_model auc": 0.7345856253648118,
+      "Validation full_model brier": 0.005388478583624853,
+      "Validation majority_prior auc": 0.5,
+      "Validation majority_prior brier": 0.005019440674730971
+    },
+    "scope": "Existing unmodified runner baseline on public validation only; no holdout scoring"
+  },
+  "configs": [],
+  "dataset": "fjc-civil-trial-36m",
+  "documents": [
+    [
+      "README.md",
+      "Loading and reproduction"
+    ],
+    [
+      "evaluation.json",
+      "Measured baseline"
+    ],
+    [
+      "LICENSE.md",
+      "Licence and attribution"
+    ]
+  ],
+  "domain": "Federal Judicial Center (FJC), U.S. federal judiciary",
+  "evaluation_use": "retrospective_research",
+  "github_repository": "earino/factory-fjc-civil-trial-36m",
+  "hf_repository": "earino/factory-fjc-civil-trial-36m",
+  "licenses": {
+    "attribution": "Federal Judicial Center, Integrated Database (IDB)",
+    "citation": "",
+    "code": "MIT",
+    "compilation_scope": "Our additional compilation rights only; upstream terms remain in force.",
+    "data_compilation": "CC0-1.0",
+    "source_data": "U.S. Public Domain (17 U.S.C. § 105); FJC states publications are not copyrighted unless otherwise noted"
+  },
+  "limitations": [
+    "Current-vintage retrospective: the IDB is a 2026 snapshot and records may be overwritten within the reporting year, so filing-time fields such as JURY may reflect later corrections; this does not prove historical operational availability.",
+    "Trial is rare (roughly 0.6-1% of civil filings), so the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+    "PROCPROG is missing for some terminated records; missing is treated as no trial, which may undercount trials.",
+    "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE, so a trial that began just before 36 months but terminated after is coded 0.",
+    "The IDB redacts judge identifiers, so judge-level effects cannot be modeled and district codes are the finest court control.",
+    "The source contains first-listed party names (PLT, DEF); the release must drop them and must not republish names even though the underlying file is public.",
+    "ORIGIN=1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+    "JURY coverage is incomplete; many records have missing jury-demand values, which should be retained as an explicit missing category.",
+    "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law, and any CC0 applied to our derived release covers only our contribution.",
+    "No publisher-suggested citation was found; the recommended credit is 'Federal Judicial Center, Integrated Database (IDB)' and no upstream attribution is legally required.",
+    "Current-vintage retrospective snapshot: the IDB is a 2026 file and records may be overwritten across updates, so this is not proof of historical operational availability.",
+    "Trial is rare, roughly 0.6-1% of civil filings; the release is strongly class-imbalanced and should be evaluated with precision/recall or PR-AUC rather than accuracy.",
+    "PROCPROG is missing for some terminated records; the frozen task treats missing PROCPROG as no trial, which may undercount trials.",
+    "Trial start dates are not usable because TRIBEGAN and TRIALEND are no longer maintained; the 36-month horizon is measured from TERMDATE.",
+    "The source contains first-listed party names and judge identifiers; the release drops them and does not republish names.",
+    "ORIGIN equal to 1 excludes removed, transferred, remanded, reopened, and MDL-transferred cases, so findings may not generalize to those populations.",
+    "JURY coverage is incomplete; missing jury-demand values are retained as an explicit missing category.",
+    "DISTRICT is carried as the codebook text code because seven districts use a letter suffix (3A, 3C, 3E, 3G, 3J, 3L, 3N) and Alaska uses the hyphen code 7-; any numeric coercion or hyphen stripping would merge or mislabel distinct courts. The build preserves the hyphen code and reports raw hyphen rows, but that district check only covers rows inside the fixed filing windows.",
+    "U.S. public-domain status does not resolve non-U.S. copyright or database rights; reusers outside the United States should verify local law.",
+    "No publisher-suggested citation was found; the recommended credit is Federal Judicial Center, Integrated Database (IDB).",
+    "No full-row historical availability ledger is available; feature status is assumed and training label timing is unverified.",
+    "No uncertainty interval; observed differences do not establish universal headroom"
+  ],
+  "post": {
+    "paragraphs": [
+      "Will a newly filed federal civil case reach trial within 36 months?",
+      "Population: Original civil proceedings (ORIGIN equal to 1) filed in U.S. district courts, one record per (CIRCUIT, DISTRICT, OFFICE, DOCKET) key, with FILEDATE in the fixed cohort windows; exclude NOS 460-465, 510-560, 861-865 and records with missing or invalid FILEDATE, NOS, JURIS, or DISTRICT. DISTRICT is retained as the codebook text code, including the letter-suffixed and hyphen-coded courts.",
+      "Target: 1 if PROCPROG is 6, 7, 8, or 9 (case disposed during or after a court or jury trial) and TERMDATE is no later than FILEDATE plus 36 months; 0 otherwise, including cases still pending at 36 months.",
+      "Prediction time: At case filing (the filing date, which is also the carried time column), using only civil cover-sheet and case-opening fields; no docket events after filing.",
+      "Splits: Fixed chronological cohorts by FILEDATE with a 36-month label-maturity embargo: train 2010-10-01 to 2014-09-30 (FY2011-FY2014); eval 2017-10-01 to 2018-09-30 (FY2018); holdout 2021-10-01 to 2022-09-30 (FY2022). Train outcomes mature by 2017-09-30, eval by 2021-09-30, and holdout by 2025-09-30; unused gap years are discarded. No random shuffling.",
+      "Outcome horizon: 36 months after filing.",
+      "Inputs: NOS: Three-digit nature-of-suit code for the action filed.; JURIS: Basis for federal jurisdiction: U.S. plaintiff, U.S. defendant, federal question, diversity, or local question.; DISTRICT: District court in which the case was filed, as the codebook district code (for example 3A for Florida Middle, 3N for a letter-suffixed district, and 7- for Alaska), retained as text rather than coerced to a number.; CIRCUIT: Circuit in which the case was filed.; JURY: Party or parties demanding a jury trial: B, D, P, N, or missing.; DEMANDED: Monetary amount demanded by the plaintiff, in thousands of dollars, top-coded at 9999.; FILEDATE_YEAR_MONTH: Calendar year and month of filing, derived from FILEDATE.; RESIDENC: Two-digit diversity-residence code for plaintiff and defendant.; ARBIT: Arbitration-program participation at filing: M, V, E, Y, or missing."
+    ],
+    "title": "Fjc Civil Trial 36M"
+  },
+  "publication_commits": {
+    "github": "cfb63214e3e4e420cf950f7b35aa6f5e0e637931",
+    "huggingface": "9ec41aec62b79469caf251e55be499aa7049e406"
+  },
+  "qualification": {
+    "gate_version": "1.6.1",
+    "result": "PASSED"
+  },
+  "record_sha256": "a84ed32c35aa5de2665d926062a3a59f4a020c3a84cd54b23c0885dac9011dda",
+  "release_date": "2026-11-13",
+  "release_schema": "factory-1",
+  "release_tag": "v-86c6129e8102da78",
+  "schema_version": 1,
+  "site_revision": 1,
+  "source": {
+    "name": "Federal Judicial Center (FJC), U.S. federal judiciary",
+    "url": "https://www.fjc.gov/sites/default/files/idb/codebooks/Civil%20Codebook%201988%20Forward%2010252023.pdf"
+  },
+  "splits": {
+    "eval": {
+      "rows": 124885
+    },
+    "holdout": {
+      "rows": 113510
+    },
+    "train": {
+      "rows": 600136
+    }
+  },
+  "summary": "Will a newly filed federal civil case reach trial within 36 months?",
+  "task_type": "binary-classification",
+  "title": "Fjc Civil Trial 36M",
+  "urls": {
+    "catalog": "https://earino.github.io/dataset-factory-site/",
+    "github": "https://github.com/earino/factory-fjc-civil-trial-36m",
+    "github_release": "https://github.com/earino/factory-fjc-civil-trial-36m/releases/tag/v-86c6129e8102da78",
+    "huggingface": "https://huggingface.co/datasets/earino/factory-fjc-civil-trial-36m",
+    "huggingface_version": "https://huggingface.co/datasets/earino/factory-fjc-civil-trial-36m/tree/v-86c6129e8102da78",
+    "version": "https://earino.github.io/factory-fjc-civil-trial-36m/versions/v-86c6129e8102da78/",
+    "website": "https://earino.github.io/factory-fjc-civil-trial-36m/"
+  }
+}
